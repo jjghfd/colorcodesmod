@@ -75,7 +75,7 @@ public class ServerConfigScreen extends Screen {
             Text.empty(),
             this.textRenderer,
             serverConfig.isDefaultEnabled(),
-            (button) -> {}
+            (checkbox) -> {}
         );
         addDrawableChild(defaultEnabledCheckbox);
         
@@ -107,7 +107,7 @@ public class ServerConfigScreen extends Screen {
             Text.empty(),
             this.textRenderer,
             true,
-            (button) -> {}
+            (checkbox) -> {}
         );
         addDrawableChild(serverEnabledCheckbox);
         
@@ -157,7 +157,7 @@ public class ServerConfigScreen extends Screen {
             Text.empty(),
             this.textRenderer,
             enabled,
-            (button) -> {}
+            (checkbox) -> {}
         );
         addDrawableChild(enabledCheckbox);
         
