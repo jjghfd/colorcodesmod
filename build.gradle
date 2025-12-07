@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.6.11'
+    id 'fabric-loom' version '1.8.13'
     id 'maven-publish'
 }
 
@@ -16,6 +16,10 @@ repositories {
         name = 'Fabric'
         url = 'https://maven.fabricmc.net/'
     }
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 dependencies {
@@ -25,7 +29,10 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     // Fabric API
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.95.1+1.21"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    
+    // ModMenu API (optional, for mod menu integration) - from Modrinth
+    modImplementation "maven.modrinth:modmenu:13.0.1"
 }
 
 processResources {

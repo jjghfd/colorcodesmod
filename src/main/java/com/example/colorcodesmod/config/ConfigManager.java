@@ -55,8 +55,9 @@ public class ConfigManager {
         
         // Default colors for preview
         public String[] favoriteColors = {
-            "#83daed",
-            "#e186c9",
+            "#f877f8",
+            "#4bffbe",
+            "#32ddf0",
             "#ffffff",
             "#ff0000",
             "#00ff00",
