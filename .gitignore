@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+build/
+dists/
+libs/
+*.gradle.zip
+*.gradle-bin.zip
+*.gradle-all.zip
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Fabric
+fabric-loader-*.jar
+
+# Temporary files
+temp/
+*.tmp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config
+local.properties
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Misc
+*.bak
+*.swp
+*.swo
+*~
