@@ -79,7 +79,7 @@ public class TextProcessor {
                                     MinecraftClient.getInstance().execute(() -> {
                                         if (chatInput != null && chatInput.getText().equals(text)) {
                                             chatInput.setText(processedText);
-                                            chatInput.setCursor(chatInput.getText().length());
+                                            chatInput.setCursor(chatInput.getText().length(), false);
                                         }
                                     });
                                 });
