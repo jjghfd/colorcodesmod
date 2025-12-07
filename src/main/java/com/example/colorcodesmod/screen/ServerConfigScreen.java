@@ -71,9 +71,11 @@ public class ServerConfigScreen extends Screen {
         addDrawableChild(defaultEnabledLabel);
         
         defaultEnabledCheckbox = new CheckboxWidget(
-            centerX - 30, startY, 20, 20,
+            centerX - 30, startY, 20,
             Text.empty(),
-            serverConfig.isDefaultEnabled()
+            this.textRenderer,
+            serverConfig.isDefaultEnabled(),
+            (button) -> {}
         );
         addDrawableChild(defaultEnabledCheckbox);
         
@@ -101,9 +103,11 @@ public class ServerConfigScreen extends Screen {
         addDrawableChild(enabledLabel);
         
         serverEnabledCheckbox = new CheckboxWidget(
-            centerX + 70, addServerY + 20, 20, 20,
+            centerX + 70, addServerY + 20, 20,
             Text.empty(),
-            true
+            this.textRenderer,
+            true,
+            (button) -> {}
         );
         addDrawableChild(serverEnabledCheckbox);
         
@@ -149,9 +153,11 @@ public class ServerConfigScreen extends Screen {
         addDrawableChild(serverAddressWidget);
         
         CheckboxWidget enabledCheckbox = new CheckboxWidget(
-            centerX, y, 20, 20,
+            centerX, y, 20,
             Text.empty(),
-            enabled
+            this.textRenderer,
+            enabled,
+            (button) -> {}
         );
         addDrawableChild(enabledCheckbox);
         
