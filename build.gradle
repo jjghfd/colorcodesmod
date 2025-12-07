@@ -32,7 +32,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     
     // ModMenu API (optional, for mod menu integration) - from Modrinth
-    modImplementation "maven.modrinth:modmenu:11.0.0+fabric-1.21.4"
+    modImplementation "maven.modrinth:modmenu:13.0.1"
 }
 
 processResources {
