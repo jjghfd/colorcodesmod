@@ -16,6 +16,10 @@ repositories {
         name = 'Fabric'
         url = 'https://maven.fabricmc.net/'
     }
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 dependencies {
@@ -27,8 +31,8 @@ dependencies {
     // Fabric API
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     
-    // ModMenu API (optional, for mod menu integration)
-    modImplementation "com.terraformersmc:modmenu:9.0.0"
+    // ModMenu API (optional, for mod menu integration) - from Modrinth
+    modImplementation "maven.modrinth:modmenu:11.0.0+fabric-1.21.4"
 }
 
 processResources {
